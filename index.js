@@ -30,7 +30,7 @@ app.post("/addmovie", (req, res) => {
   res.redirect("/");
 })
 
-app.listen(port, () => {
+app.listen(procerr.env.PORT || port, () => {
   console.log(`Server is running on port ${port}!`)
 });
 
